@@ -79,21 +79,6 @@ cinema-app/
         └── navbar.js             # Dynamic navbar rendering
 ```
 
-## Role Permissions
-
-| Feature                     | Admin | User |
-|-----------------------------|-------|------|
-| View billboard              | ✅    | ✅   |
-| Make a reservation          | ❌    | ✅   |
-| View own reservations       | ❌    | ✅   |
-| Edit own reservations       | ❌    | ✅   |
-| Cancel own reservations     | ❌    | ✅   |
-| View all reservations       | ✅    | ❌   |
-| Confirm/cancel any reserve  | ✅    | ❌   |
-| Create showings             | ✅    | ❌   |
-| Edit showings               | ✅    | ❌   |
-| Delete showings             | ✅    | ❌   |
-
 ## Technical Decisions
 
 - **Hash-based routing** (`#/route`) was chosen over History API to avoid server-side redirect configuration, making it work out of the box with Vite.
