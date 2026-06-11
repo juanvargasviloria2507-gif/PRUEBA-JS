@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CinemaApp</title>
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+
+  <!-- Navbar — se muestra solo cuando hay sesión activa -->
+  <nav id="navbar" class="hidden bg-gray-800 shadow-lg px-6 py-3 flex items-center justify-between">
+    <span class="text-xl font-bold text-yellow-400">🎬 CinemaApp</span>
+    <div class="flex gap-4 items-center">
+      <a href="#/billboard" class="hover:text-yellow-400 transition">Cartelera</a>
+      <a href="#/my-reservations" class="hover:text-yellow-400 transition">Mis Reservas</a>
+      <!-- Solo visible para admin -->
+      <a id="nav-admin-functions" href="#/admin/functions" class="hidden hover:text-yellow-400 transition">Funciones</a>
+      <a id="nav-admin-reservations" href="#/admin/reservations" class="hidden hover:text-yellow-400 transition">Reservas</a>
+      <span id="nav-username" class="text-gray-400 text-sm"></span>
+      <button id="btn-logout" class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-sm transition">
+        Cerrar sesión
+      </button>
+    </div>
+  </nav>
+
+  <!-- Aquí se renderizan todas las vistas dinámicamente -->
+  <main id="app" class="p-6"></main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

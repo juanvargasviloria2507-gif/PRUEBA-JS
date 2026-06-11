@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin Cinema",
+      "email": "admin@cinema.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Juan Pérez",
+      "email": "juan@user.com",
+      "password": "user123",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "name": "María López",
+      "email": "maria@user.com",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "functions": [
+    {
+      "id": "1",
+      "movie": "Inception",
+      "room": "Sala 1",
+      "date": "2026-06-15",
+      "time": "18:00",
+      "totalCapacity": 50,
+      "availableSeats": 50,
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "movie": "Interstellar",
+      "room": "Sala 2",
+      "date": "2026-06-16",
+      "time": "20:00",
+      "totalCapacity": 40,
+      "availableSeats": 40,
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "movie": "The Dark Knight",
+      "room": "Sala 3",
+      "date": "2026-06-17",
+      "time": "19:30",
+      "totalCapacity": 60,
+      "availableSeats": 60,
+      "status": "active"
+    }
+  ],
+  "reservations": []
+}
